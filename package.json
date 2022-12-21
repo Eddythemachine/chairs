@@ -1,0 +1,14 @@
+{
+  "name": "chairs",
+  "version": "1.0.0",
+  "description": "comfort is more than a luxury",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/index.css -w"
+  },
+  "author": "eddythemachine",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

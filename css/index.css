@@ -1,0 +1,388 @@
+@import url(../fonts/fonts.css);
+@keyframes moveRight {
+  0% {
+    transform: translateX(-500rem);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+.five {
+  background: #499892; }
+  .five div {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 20rem; }
+    .five div img {
+      width: 6rem; }
+    .five div p {
+      font-size: 4rem;
+      margin-left: 2rem; }
+
+.first {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../pics/homepage.jpg") center center/cover;
+  height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  z-index: -9; }
+
+.homepage-main-pri h1 {
+  font-family: "Rubik Gemstones";
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-style: italic;
+  margin-bottom: 0;
+  color: #499892;
+  letter-spacing: 0.5rem;
+  text-shadow: 0.2rem 0.2rem 0.1rem #002a3b; }
+
+.homepage-main-pri span {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+  font-size: 20px;
+  font-style: normal;
+  color: #5d8b87;
+  text-shadow: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 900; }
+
+.homepage-main {
+  padding-right: 5rem;
+  padding-bottom: 10rem;
+  z-index: 9;
+  animation: normal moveRight 1s;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 15rem; }
+
+.homepage-main-pri button {
+  padding: 1.5rem 5rem;
+  width: 25rem;
+  border-radius: 10rem;
+  margin-top: 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer; }
+
+.homepage-main-pri .invent {
+  background: #5b5c5c;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.homepage-main-pri .invent:hover {
+  opacity: 0.8; }
+
+.homepage-main-pri .invest {
+  margin-left: 1rem;
+  background: rgba(73, 152, 146, 0.8);
+  transition: all 0.3s ease-in;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem; }
+
+.homepage-main-pri .invest:hover {
+  opacity: 0.8; }
+
+.hide-nav {
+  display: none; }
+
+.first__nav {
+  display: flex;
+  justify-content: space-between;
+  background: #499892;
+  padding: 2rem 3rem;
+  align-items: center;
+  height: 3rem;
+  position: sticky;
+  border-bottom: solid rgba(0, 0, 0, 0.3) 0.5rem;
+  top: 0;
+  left: 0;
+  z-index: 999; }
+  .first__nav img {
+    width: 2rem; }
+  .first__nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    background: rgba(73, 152, 146, 0.3);
+    padding: 1rem;
+    margin-right: 0.3rem;
+    border-radius: 1rem;
+    border: solid rgba(0, 0, 0, 0.2);
+    color: black;
+    text-transform: uppercase;
+    font-family: sans-serif; }
+
+.close-btn {
+  display: none; }
+
+@media (max-width: 950px) {
+  .homepage-main {
+    background-color: rgba(0, 0, 0, 0);
+    margin-right: 0;
+    margin-bottom: 9rem; } }
+
+@media (max-width: 720px) {
+  html {
+    font-size: 55.5%; }
+  .homepage-main {
+    margin-bottom: 7rem; }
+  .homepage-main-pri span {
+    color: black; }
+  .hide-nav {
+    display: block;
+    font-size: 3rem; }
+  .close-btn {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    font-size: 3.5rem;
+    color: white; }
+  .first__nav nav {
+    position: relative;
+    top: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background: white;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    padding: 3rem;
+    transition: 0.3s linear; }
+    .first__nav nav a {
+      border: none;
+      color: white;
+      background: none;
+      border-radius: 0; }
+  .translate {
+    transform: translateX(100%); } }
+
+.four__container {
+  background: rgba(73, 152, 146, 0.9);
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center; }
+  .four__container .container-cart {
+    border: solid rgba(0, 0, 0, 0.3) 0.05rem;
+    padding: 1rem;
+    width: 20rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #499892; }
+    .four__container .container-cart div i {
+      font-size: 2rem;
+      color: #ffa600;
+      margin-bottom: 1rem; }
+    .four__container .container-cart button {
+      width: 10rem;
+      height: 3rem;
+      font-size: 2rem;
+      text-transform: lowercase;
+      outline: none;
+      border: none;
+      border-radius: 1rem;
+      cursor: pointer;
+      text-transform: uppercase; }
+    .four__container .container-cart div img {
+      width: 20rem;
+      height: 20rem;
+      border-radius: 2rem; }
+    .four__container .container-cart div .container-cart-price {
+      display: flex;
+      gap: 3rem;
+      padding: 0 1rem;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: solid rgba(0, 0, 0, 0.1) 0.3rem;
+      background: #499892;
+      margin-top: 1rem;
+      justify-content: center;
+      align-items: center; }
+      .four__container .container-cart div .container-cart-price p {
+        display: block; }
+
+.two {
+  background: rgba(73, 152, 146, 0.3);
+  padding: 2rem;
+  padding-top: 10rem; }
+  .two div div img {
+    width: 100rem;
+    height: 40rem;
+    border-radius: 2rem; }
+
+.container__products {
+  display: flex;
+  gap: 3rem;
+  background: #499892;
+  padding: 3rem;
+  border-radius: 2rem;
+  margin-bottom: 3rem; }
+  .container__products div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 140rem;
+    background-color: rgba(91, 92, 92, 0.1);
+    padding: 5rem;
+    border-radius: 1rem;
+    position: relative;
+    border: solid rgba(19, 19, 19, 0.3) 0.1rem;
+    box-shadow: 0rem 0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5); }
+    .container__products div .price {
+      position: absolute;
+      top: 4rem;
+      left: 0rem;
+      background: rgba(11, 11, 11, 0.4);
+      width: 16rem;
+      font-size: 3rem;
+      transform: rotateZ(-30deg);
+      border-radius: 2rem; }
+    .container__products div h3 {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 4rem;
+      margin-bottom: 0;
+      font-family: "Rubik Gemstones"; }
+    .container__products div p {
+      margin-top: 0;
+      font-size: 2rem;
+      text-align: center;
+      font-family: cursive;
+      color: rgba(255, 255, 255, 0.8); }
+    .container__products div button {
+      padding: 1.5rem 2rem;
+      border-radius: 2rem;
+      width: 15rem;
+      outline: none;
+      border: none;
+      margin-top: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 80%;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-size: 1.6rem; }
+      .container__products div button:hover {
+        box-shadow: 0.1rem 0.5rem 2rem #5b5c5c; }
+
+@media (max-width: 950px) {
+  .container__products {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container__products div {
+      width: 50rem; }
+      .container__products div button {
+        margin-left: 2rem; }
+  .two div div img {
+    width: 45rem;
+    margin: auto; } }
+
+@media (max-width: 550px) {
+  .container__products div {
+    width: 41rem; } }
+
+.three {
+  background: rgba(73, 152, 146, 0.9);
+  padding: 5rem;
+  padding-top: 10rem; }
+  .three .three__container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; }
+    .three .three__container img {
+      width: 20rem;
+      border-radius: 2rem;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 2rem; }
+    .three .three__container .container-main {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 2rem;
+      width: 25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 50rem;
+      padding: 3rem;
+      transition: all 0.5s linear; }
+      .three .three__container .container-main:hover {
+        transform: translateY(-2rem); }
+      .three .three__container .container-main .container-main-text {
+        flex: 1; }
+        .three .three__container .container-main .container-main-text p {
+          margin-top: 6rem;
+          font-size: 2.5rem;
+          text-transform: uppercase;
+          font-weight: 900;
+          text-align: center;
+          color: #02988c;
+          font-family: "Rubik Gemstones"; }
+      .three .three__container .container-main div button {
+        color: #000000;
+        padding: 1rem 1rem;
+        width: 20rem;
+        font-size: 2rem;
+        background: #499892;
+        border-radius: 0.6rem;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0.2rem 0.3rem 0rem; }
+
+@media (max-width: 720px) {
+  .three .three__container {
+    flex-direction: column;
+    align-items: center; } }
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+@media (max-width: 720px) {
+  html {
+    font-size: 55.5%; } }
+
+.blur-class {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 33; }
