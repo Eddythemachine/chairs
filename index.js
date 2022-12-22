@@ -34,7 +34,7 @@ const eventListenerScrollto = function (add) {
 
 // close navbar
 
-const closeNav = function () {
+const closeNav = function (e) {
   navBar.classList.add("translate");
   document.querySelector(".blur").classList.remove("blur-class");
 };
@@ -50,6 +50,13 @@ closeBtb.addEventListener("click", () => {
 });
 document.querySelector(".blur").addEventListener("click", () => {
   closeNav();
+});
+
+navBar.addEventListener("click", (e) => {
+  console.log(e.target.classList.contains("links"));
+  if (e.target.classList.contains("links")) {
+    closeNav();
+  }
 });
 
 // Scrolling into view
