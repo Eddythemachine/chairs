@@ -292,10 +292,10 @@
       font-family: "Rubik Gemstones"; }
     .container__products div p {
       margin-top: 0;
-      font-size: 2rem;
+      font-size: 3rem;
       text-align: center;
-      font-family: cursive;
-      color: rgba(255, 255, 255, 0.8); }
+      font-family: "Teko";
+      color: black; }
     .container__products div button {
       padding: 1.5rem 2rem;
       border-radius: 2rem;
